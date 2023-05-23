@@ -58,9 +58,9 @@ namespace SecurityLite.Controllers
             var gObject = _context.GuardedObjects.FindAsync(gObjId).Result;
             var service = _context.Services.FindAsync(servId).Result;
             if (order == null || gObject == null || service == null) return NotFound();
-            ViewBag.Order = ordId;
-            ViewBag.Object = gObjId;
-            ViewBag.Service = servId;
+            ViewBag.Order = order;
+            ViewBag.GuardedObject = gObject;
+            ViewBag.Service = service;
             //ViewData["ServiceId"] = new SelectList(_context.Services.Select(s=>s.Id==servId), "Id", "Name");
             return View();
         }
@@ -78,13 +78,13 @@ namespace SecurityLite.Controllers
                 return RedirectToAction(nameof(Index));
             }
             //viewbag
-            var order = orderDetail.Order;
-            var gObject = orderDetail.GuardedObject;
-            var service = orderDetail.Service;
-            if (order == null || gObject == null || service == null) return NotFound();
-            ViewBag.OrderId = order;
-            ViewBag.ObjectId = gObject;
-            ViewBag.ServiceId = service;
+            //var order = orderDetail.Order;
+            //var gObject = orderDetail.GuardedObject;
+            //var service = orderDetail.Service;
+            //if (order == null || gObject == null || service == null) return NotFound();
+            ViewBag.Order = orderDetail.Order;
+            ViewBag.GuardedObject = orderDetail.GuardedObject;
+            ViewBag.Service = orderDetail.Service;
             return View(orderDetail);
         }
         public async Task<IActionResult> SelectOrder()

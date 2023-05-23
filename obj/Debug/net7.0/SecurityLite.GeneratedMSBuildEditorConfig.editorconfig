@@ -9,265 +9,265 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SecurityLite
 build_property.RootNamespace = SecurityLite
-build_property.ProjectDir = E:\projects\СSharp\SecurityLite\
+build_property.ProjectDir = C:\projects\Csharp\SecurityWebLite\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = E:\projects\СSharp\SecurityLite
+build_property.MSBuildProjectDirectory = C:\projects\Csharp\SecurityWebLite
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/projects/СSharp/SecurityLite/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Categories/Create.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Categories/Delete.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Categories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Categories/Details.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Categories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Categories/Edit.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Categories/Index.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Clients/Create.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Clients/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Clients/Delete.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Clients/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Clients/Details.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Clients/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Clients/Edit.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Clients/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Clients/Index.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Clients/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/GuardedObjects/Create.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/GuardedObjects/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3VhcmRlZE9iamVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/GuardedObjects/Delete.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/GuardedObjects/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3VhcmRlZE9iamVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/GuardedObjects/Details.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/GuardedObjects/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3VhcmRlZE9iamVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/GuardedObjects/Edit.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/GuardedObjects/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3VhcmRlZE9iamVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/GuardedObjects/Index.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/GuardedObjects/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3VhcmRlZE9iamVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Home/Index.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Home/Privacy.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Managers/Create.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Managers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Managers/Delete.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Managers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Managers/Details.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Managers/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Managers/Edit.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Managers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Managers/Index.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Managers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/OrderDetails/Create.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/OrderDetails/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/OrderDetails/Delete.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/OrderDetails/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/OrderDetails/Details.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/OrderDetails/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/OrderDetails/Edit.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/OrderDetails/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/OrderDetails/Index.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/OrderDetails/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/OrderDetails/SelectObject.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/OrderDetails/SelectObject.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXFNlbGVjdE9iamVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/OrderDetails/SelectOrder.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/OrderDetails/SelectOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXFNlbGVjdE9yZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/OrderDetails/SelectService.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/OrderDetails/SelectService.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXFNlbGVjdFNlcnZpY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Orders/Create.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Orders/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Orders/Delete.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Orders/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Orders/Details.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Orders/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Orders/Edit.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Orders/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Orders/Index.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Orders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Roles/Create.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Roles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Roles/Delete.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Roles/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Roles/Edit.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Roles/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Roles/Index.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Roles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Roles/UserList.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Roles/UserList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcVXNlckxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Services/Create.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Services/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Services/Delete.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Services/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Services/Details.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Services/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Services/Edit.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Services/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Services/Index.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Services/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Shared/Error.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Shared/_LoginPartial.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Users/ChangePassword.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Users/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Users/Create.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Users/Delete.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Users/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Users/Edit.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Users/Index.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/_ViewImports.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/_ViewStart.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/projects/СSharp/SecurityLite/Views/Shared/_Layout.cshtml]
+[C:/projects/Csharp/SecurityWebLite/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-qd4pq3cec8

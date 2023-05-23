@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\projects\\СSharp\\SecurityLite\\SecurityLite.csproj": {}
+    "C:\\projects\\Csharp\\SecurityWebLite\\SecurityLite.csproj": {}
   },
   "projects": {
-    "E:\\projects\\СSharp\\SecurityLite\\SecurityLite.csproj": {
+    "C:\\projects\\Csharp\\SecurityWebLite\\SecurityLite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\projects\\СSharp\\SecurityLite\\SecurityLite.csproj",
+        "projectUniqueName": "C:\\projects\\Csharp\\SecurityWebLite\\SecurityLite.csproj",
         "projectName": "SecurityLite",
-        "projectPath": "E:\\projects\\СSharp\\SecurityLite\\SecurityLite.csproj",
-        "packagesPath": "C:\\Users\\WorkLaptop\\.nuget\\packages\\",
-        "outputPath": "E:\\projects\\СSharp\\SecurityLite\\obj\\",
+        "projectPath": "C:\\projects\\Csharp\\SecurityWebLite\\SecurityLite.csproj",
+        "packagesPath": "C:\\Users\\HomeWorkSpace\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\Csharp\\SecurityWebLite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\WorkLaptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HomeWorkSpace\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

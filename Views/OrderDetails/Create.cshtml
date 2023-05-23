@@ -15,21 +15,21 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="OrderId" class="control-label"></label>                
-               @* <input type="text" class="form-control" value="@ViewBag.Order.Id" readonly />*@
-                <p>@ViewBag.OrderId</p>
-                <input type ="hidden" asp-for="OrderId" class="form-control" value="@ViewBag.OrderId" readonly />
+                <p>@ViewBag.Order.Id</p>
+                <input type ="hidden" asp-for="OrderId" class="form-control" value="@ViewBag.Order.Id"/>
+                <span asp-validation-for="OrderId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="GuardedObjectId" class="control-label"></label>
-                @*<input type="text" class="form-control" value="@ViewBag.Object.Name" readonly />*@
-                <p>@ViewBag.ObjectId</p>
-                <input type="hidden" asp-for="GuardedObjectId" class="form-control" value="@ViewBag.ObjectId>Id" readonly />
+                <p>@ViewBag.GuardedObject.Name</p>
+                <input type="hidden" asp-for="GuardedObjectId" class="form-control" value="@ViewBag.GuardedObject.Id"/>
+                <span asp-validation-for="GuardedObjectId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="ServiceId" class="control-label"></label>
-                @*<input type="text"  class="form-control" value="@ViewBag.Service.Name" readonly />*@
-                <p>@ViewBag.ServiceId</p>
-                <input type="hidden" asp-for="ServiceId" class="form-control" value="@ViewBag.ServiceId" readonly />
+                <p>@ViewBag.Service.Name</p>
+                <input type="hidden" asp-for="ServiceId" class="form-control" value="@ViewBag.Service.Id"/>
+                <span asp-validation-for="ServiceId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Quantity" class="control-label"></label>
