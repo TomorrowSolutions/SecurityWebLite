@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityLite", "SecurityLite.csproj", "{6AFF8F8A-BBD5-4916-9429-70CC0C7941BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AFF8F8A-BBD5-4916-9429-70CC0C7941BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AFF8F8A-BBD5-4916-9429-70CC0C7941BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AFF8F8A-BBD5-4916-9429-70CC0C7941BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AFF8F8A-BBD5-4916-9429-70CC0C7941BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01B26134-319D-4BDC-B1EA-EA0F4EA7A107}
+	EndGlobalSection
+EndGlobal

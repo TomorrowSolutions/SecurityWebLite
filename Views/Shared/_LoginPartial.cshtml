@@ -1,0 +1,90 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using SecurityLite.Areas.Identity.Data
+
+@inject SignInManager<SecurityLiteUser> SignInManager
+@inject UserManager<SecurityLiteUser> UserManager
+@inject ModelsContext _context;
+<ul class="navbar-nav">
+@if (SignInManager.IsSignedIn(User))
+{
+    <li class="nav-item">
+            @if (User.IsInRole("admin"))
+            {
+                <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+                    Здравствуйте, администратор !
+                </a>
+            }
+            @if (User.IsInRole("manager"))
+            {
+                Manager manager;
+                try
+                {
+                    manager = _context.Managers.Where(e => e.AccountNum == UserManager.GetUserAsync(User).Result.AccountNum).First();
+                }
+                catch (Exception)
+                {
+                    manager = null;
+                }
+                if (manager is null)
+                {
+                    <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+                        Здравствуйте, вы менеджер, но вас нет в бд !
+                    </a>
+                }
+                else
+                {
+                    <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+                        Здравствуйте, @manager.GetFIO.
+                    </a>
+                }
+
+            }
+            @if (User.IsInRole("client"))
+            {
+                Client client;
+                try
+                {
+                    client = _context.Clients.Where(c => c.AccountNum == UserManager.GetUserAsync(User).Result.AccountNum).First();
+                }
+                catch (Exception)
+                {
+                    client = null;
+                }
+                if (client is null)
+                {
+                    <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+                        Здравствуйте, вы клиент, но вас нет в бд !
+                    </a>
+                }
+                else
+                {
+                    <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+                        Здравствуйте, @client.GetFIO .
+                    </a>
+                }
+            }
+            @if (User.IsInRole("visitor"))
+            {
+
+                <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+                    Здравствуйте, Посетитель.
+                </a>
+
+            }
+    </li>
+    <li class="nav-item">
+        <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <button id="logout" type="submit" class="nav-link btn btn-link text-dark border-0">Logout</button>
+        </form>
+    </li>
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" id="register" asp-area="Identity" asp-page="/Account/Register">Регистрация</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">Авторизация</a>
+    </li>
+}
+</ul>
