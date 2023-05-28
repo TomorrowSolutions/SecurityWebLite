@@ -4,9 +4,12 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using OfficeOpenXml;
+using SecurityLite.Areas.Identity.Data;
 using SecurityLite.Models;
 
 namespace SecurityLite.Controllers
@@ -15,11 +18,16 @@ namespace SecurityLite.Controllers
     public class ManagersController : Controller
     {
         private readonly ModelsContext _context;
+        private readonly UserManager<SecurityLiteUser> _userManager;
+        private readonly IWebHostEnvironment _appEnvironment;
 
-        public ManagersController(ModelsContext context)
+        public ManagersController(ModelsContext context, UserManager<SecurityLiteUser> userManager, IWebHostEnvironment appEnvironment)
         {
             _context = context;
+            _userManager = userManager;
+            _appEnvironment = appEnvironment;
         }
+
 
         // GET: Managers
         public async Task<IActionResult> Index()
@@ -46,7 +54,48 @@ namespace SecurityLite.Controllers
 
             return View(manager);
         }
-
+        [Authorize(Roles = "admin")]
+        public FileResult GetReport()
+        {
+            FileInfo fi = new FileInfo(_appEnvironment.WebRootPath + "/Reports/ManagerReportTemplate.xlsx");
+            FileInfo fr = new FileInfo(_appEnvironment.WebRootPath + "/Reports/ManagerReport.xlsx");
+            //будем использовть библитотеку не для коммерческого использования
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            //открываем файл с шаблоном
+            using (ExcelPackage excelPackage = new ExcelPackage(fi))
+            {
+                //устанавливаем поля документа
+                excelPackage.Workbook.Properties.Author = "Охранная организация";
+                excelPackage.Workbook.Properties.Title = "Отчет по менеджерам";
+                excelPackage.Workbook.Properties.Subject = "Менеджеры";
+                excelPackage.Workbook.Properties.Created = DateTime.Now;
+                //плучаем лист по имени.
+                ExcelWorksheet worksheet =
+                excelPackage.Workbook.Worksheets["Менеджеры"];
+                //получаем списко пользователей и в цикле заполняем лист данными
+                int startLine = 3;
+                List<Manager> managers = _context.Managers.Include(m => m.Category).ToList();
+                foreach (Manager m in managers)
+                {
+                    worksheet.Cells[startLine, 1].Value = startLine - 2;
+                    worksheet.Cells[startLine, 2].Value = m.Id;
+                    worksheet.Cells[startLine, 3].Value = m.GetFIO;
+                    worksheet.Cells[startLine, 4].Value = m.Education;
+                    worksheet.Cells[startLine, 5].Value = m.Category.Name;
+                    worksheet.Cells[startLine, 6].Value = m.DateOfStart.ToString();
+                    worksheet.Cells[startLine, 7].Value = m.AccountNum;
+                    startLine++;
+                }
+                //созраняем в новое место
+                excelPackage.SaveAs(fr);
+            }
+            // Тип файла - content-type
+            string file_type =
+            "application/vnd.openxmlformatsofficedocument.spreadsheetml.sheet";
+            // Имя файла - необязательно
+            string file_name = "ManagerReport.xlsx";
+            return File("/Reports/ManagerReport.xlsx", file_type, file_name);
+        }
         // GET: Managers/Create
         public IActionResult Create()
         {
@@ -92,8 +141,6 @@ namespace SecurityLite.Controllers
                 return NotFound();
             }
             List<SelectListItem> items = new List<SelectListItem>();
-            /*manager.Education == "Среднее" ? items.Add(new SelectListItem { Text = "Среднее", Value = "Среднее", Selected = true }) :
-                                            items.Add(new SelectListItem { Text = "Среднее", Value = "Среднее" });*/
             if (manager.Education=="Среднее")
             {
                 items.Add(new SelectListItem { Text = "Среднее", Value = "Среднее", Selected = true });

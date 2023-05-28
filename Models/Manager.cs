@@ -20,9 +20,9 @@ namespace SecurityLite.Models
         [Display(Name = "Образование")]
         [Required(ErrorMessage = "Укажите тип образования")]
         public string Education { get; set; }
-        [Display(Name = "Должность")]
+        [Display(Name = "Категория")]
         public int? CategoryId { get; set; }
-        [Display(Name = "Должность")]
+        [Display(Name = "Категория")]
         public Category? Category { get; set; }
         [Display(Name = "Дата начала работы")]
         [Required(ErrorMessage = "Укажите дату начала работы")]

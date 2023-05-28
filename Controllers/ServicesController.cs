@@ -4,9 +4,12 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using OfficeOpenXml;
+using SecurityLite.Areas.Identity.Data;
 using SecurityLite.Models;
 
 namespace SecurityLite.Controllers
@@ -15,12 +18,18 @@ namespace SecurityLite.Controllers
     public class ServicesController : Controller
     {
         private readonly ModelsContext _context;
+        private readonly UserManager<SecurityLiteUser> _userManager;
+        private readonly IWebHostEnvironment _appEnvironment;
 
-        public ServicesController(ModelsContext context)
+        public ServicesController(ModelsContext context, UserManager<SecurityLiteUser> userManager, IWebHostEnvironment appEnvironment)
         {
             _context = context;
+            _userManager = userManager;
+            _appEnvironment = appEnvironment;
         }
 
+
+        [Authorize(Roles = "client,manager,admin")]
         // GET: Services
         public async Task<IActionResult> Index()
         {
@@ -28,7 +37,7 @@ namespace SecurityLite.Controllers
                           View(await _context.Services.ToListAsync()) :
                           Problem("Entity set 'ModelsContext.Services'  is null.");
         }
-
+        [Authorize(Roles = "client,manager,admin")]
         // GET: Services/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -46,7 +55,52 @@ namespace SecurityLite.Controllers
 
             return View(service);
         }
-
+        [Authorize(Roles = "admin")]
+        public FileResult GetReport()
+        {
+            FileInfo fi = new FileInfo(_appEnvironment.WebRootPath + "/Reports/ServiceReportTemplate.xlsx");
+            FileInfo fr = new FileInfo(_appEnvironment.WebRootPath + "/Reports/ServiceReport.xlsx");
+            //будем использовть библитотеку не для коммерческого использования
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            //открываем файл с шаблоном
+            using (ExcelPackage excelPackage = new ExcelPackage(fi))
+            {
+                //устанавливаем поля документа
+                excelPackage.Workbook.Properties.Author = "Охранная организация";
+                excelPackage.Workbook.Properties.Title = "Отчет по услугам";
+                excelPackage.Workbook.Properties.Subject = "Услуги";
+                excelPackage.Workbook.Properties.Created = DateTime.Now;
+                //плучаем лист по имени.
+                ExcelWorksheet worksheet =
+                excelPackage.Workbook.Worksheets["Услуги"];
+                //получаем списко пользователей и в цикле заполняем лист данными
+                int startLine = 3;
+                List<Service> services = _context.Services.ToList();
+                List<OrderDetail> orderDetails = _context.OrderDetails.Include(o => o.GuardedObject).Include(o => o.Order).Include(o => o.Service).ToList();
+                foreach (Service s in services)
+                {
+                    worksheet.Cells[startLine, 1].Value = startLine - 2;
+                    worksheet.Cells[startLine, 2].Value = s.Id;
+                    worksheet.Cells[startLine, 3].Value = s.Name;
+                    worksheet.Cells[startLine, 4].Value = s.PeriodOfExecution;
+                    worksheet.Cells[startLine, 5].Value = s.Price;
+                    //Частота пользования услугой
+                    worksheet.Cells[startLine, 6].Value = Math.Round((double)orderDetails.Where(o => o.Service.Id == s.Id).
+                        GroupBy(o => o.Order).Count() / orderDetails.GroupBy(o => o.Order).Count(), 2);
+                    worksheet.Cells[startLine, 7].Value = s.Description;
+                    startLine++;
+                }
+                //созраняем в новое место
+                excelPackage.SaveAs(fr);
+            }
+            // Тип файла - content-type
+            string file_type =
+            "application/vnd.openxmlformatsofficedocument.spreadsheetml.sheet";
+            // Имя файла - необязательно
+            string file_name = "ServiceReport.xlsx";
+            return File("/Reports/ServiceReport.xlsx", file_type, file_name);
+        }
+        [Authorize(Roles = "manager,admin")]
         // GET: Services/Create
         public IActionResult Create()
         {
@@ -56,6 +110,7 @@ namespace SecurityLite.Controllers
         // POST: Services/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "manager,admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,Price,PeriodOfExecution,Description")] Service service)
@@ -68,7 +123,7 @@ namespace SecurityLite.Controllers
             }
             return View(service);
         }
-
+        [Authorize(Roles = "manager,admin")]
         // GET: Services/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -84,7 +139,7 @@ namespace SecurityLite.Controllers
             }
             return View(service);
         }
-
+        [Authorize(Roles = "manager,admin")]
         // POST: Services/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -119,7 +174,7 @@ namespace SecurityLite.Controllers
             }
             return View(service);
         }
-
+        [Authorize(Roles = "manager,admin")]
         // GET: Services/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -137,7 +192,7 @@ namespace SecurityLite.Controllers
 
             return View(service);
         }
-
+        [Authorize(Roles = "manager,admin")]
         // POST: Services/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -156,7 +211,7 @@ namespace SecurityLite.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        [Authorize(Roles = "manager,admin")]
         private bool ServiceExists(int id)
         {
           return (_context.Services?.Any(e => e.Id == id)).GetValueOrDefault();

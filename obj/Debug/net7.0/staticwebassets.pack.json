@@ -9,6 +9,38 @@
       "PackagePath": "staticwebassets\\Files\\SOCIAL_HOUSING_15_HIRAN_PERERA_REUSE__thumb.jpg"
     },
     {
+      "Id": "C:\\projects\\Csharp\\SecurityWebLite\\wwwroot\\Files\\burzhui.png",
+      "PackagePath": "staticwebassets\\Files\\burzhui.png"
+    },
+    {
+      "Id": "C:\\projects\\Csharp\\SecurityWebLite\\wwwroot\\Files\\image.jpg",
+      "PackagePath": "staticwebassets\\Files\\image.jpg"
+    },
+    {
+      "Id": "C:\\projects\\Csharp\\SecurityWebLite\\wwwroot\\Reports\\ManagerReport.xlsx",
+      "PackagePath": "staticwebassets\\Reports\\ManagerReport.xlsx"
+    },
+    {
+      "Id": "C:\\projects\\Csharp\\SecurityWebLite\\wwwroot\\Reports\\ManagerReportTemplate.xlsx",
+      "PackagePath": "staticwebassets\\Reports\\ManagerReportTemplate.xlsx"
+    },
+    {
+      "Id": "C:\\projects\\Csharp\\SecurityWebLite\\wwwroot\\Reports\\OrderReport.xlsx",
+      "PackagePath": "staticwebassets\\Reports\\OrderReport.xlsx"
+    },
+    {
+      "Id": "C:\\projects\\Csharp\\SecurityWebLite\\wwwroot\\Reports\\OrderReportTemplate.xlsx",
+      "PackagePath": "staticwebassets\\Reports\\OrderReportTemplate.xlsx"
+    },
+    {
+      "Id": "C:\\projects\\Csharp\\SecurityWebLite\\wwwroot\\Reports\\ServiceReport.xlsx",
+      "PackagePath": "staticwebassets\\Reports\\ServiceReport.xlsx"
+    },
+    {
+      "Id": "C:\\projects\\Csharp\\SecurityWebLite\\wwwroot\\Reports\\ServiceReportTemplate.xlsx",
+      "PackagePath": "staticwebassets\\Reports\\ServiceReportTemplate.xlsx"
+    },
+    {
       "Id": "C:\\projects\\Csharp\\SecurityWebLite\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

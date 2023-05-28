@@ -1769,7 +1769,6 @@ C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\win-arm\native\Micr
 C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
 C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
 C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
@@ -1793,8 +1792,6 @@ C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\win-arm\native\e_sq
 C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
@@ -1823,3 +1820,9 @@ C:\projects\Csharp\SecurityWebLite\obj\Debug\net7.0\refint\SecurityLite.dll
 C:\projects\Csharp\SecurityWebLite\obj\Debug\net7.0\SecurityLite.pdb
 C:\projects\Csharp\SecurityWebLite\obj\Debug\net7.0\SecurityLite.genruntimeconfig.cache
 C:\projects\Csharp\SecurityWebLite\obj\Debug\net7.0\ref\SecurityLite.dll
+C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\EPPlus.dll
+C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\EPPlus.Interfaces.dll
+C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\EPPlus.System.Drawing.dll
+C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\projects\Csharp\SecurityWebLite\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
