@@ -1,13 +1,13 @@
 ﻿@model SecurityLite.Models.Service
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Услуги - редактирование";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Edit</h1>
+<h1>Редактирование</h1>
 
-<h4>Service</h4>
+<h4>Услуга</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -35,14 +35,14 @@
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Сохранить" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">На главную</a>
 </div>
 
 @section Scripts {

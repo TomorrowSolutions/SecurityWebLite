@@ -1,14 +1,14 @@
 ﻿@model SecurityLite.Models.Manager
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Менеджеры - подробности";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details</h1>
+<h1>Подробности</h1>
 
 <div>
-    <h4>Manager</h4>
+    <h4>Менеджер</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -56,6 +56,7 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Редактировать</a> |
+    <a asp-action="removeFromCategory" asp-route-id="@Model?.Id">Удалить категорию</a> |
+    <a asp-action="Index">На главную</a>
 </div>

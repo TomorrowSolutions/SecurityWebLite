@@ -3,6 +3,8 @@ using SecurityLite.Models;
 using Microsoft.AspNetCore.Identity;
 using SecurityLite.Data;
 using SecurityLite.Areas.Identity.Data;
+using Quartz;
+using SecurityLite.Jobs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,7 +29,21 @@ builder.Services.ConfigureApplicationCookie(opt =>
     opt.AccessDeniedPath = new PathString("/Identity/Account/AccessDenied");
     opt.LoginPath = new PathString("/Identity/Account/Login");
 });
-
+builder.Services.AddQuartz(q =>
+{
+    q.UseMicrosoftDependencyInjectionJobFactory();
+    var jobKey = new JobKey("ReportSender");
+    q.AddJob<ReportSender>(opts=>opts.WithIdentity(jobKey));
+    q.AddTrigger(t =>
+        t.ForJob(jobKey)
+        .WithIdentity("ReportSender-trigger")
+        .StartNow()
+        .WithSimpleSchedule(x => x.WithIntervalInHours(24)
+        .RepeatForever())
+        );
+}
+);
+builder.Services.AddQuartzHostedService(q => q.WaitForJobsToComplete = true);
 
 
 

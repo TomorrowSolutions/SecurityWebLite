@@ -1,14 +1,14 @@
 ﻿@model SecurityLite.Models.Order
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Заказы - подробности";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details</h1>
+<h1>Подробности</h1>
 
 <div>
-    <h4>Order</h4>
+    <h4>Заказ</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -45,6 +45,6 @@
 </div>
 <div>
     <a asp-action="finalDataCost" asp-route-id="@Model?.Id">Расчитать стоимость и дату выполнения</a> |
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Редактировать</a> |
+    <a asp-action="Index">На главную</a>
 </div>

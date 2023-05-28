@@ -1,13 +1,13 @@
 ﻿@model SecurityLite.Models.OrderDetail
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Подробности заказов - добавление";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Create</h1>
+<h1>Добавление</h1>
 
-<h4>OrderDetail</h4>
+<h4>Подробность заказа</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -37,14 +37,14 @@
                 <span asp-validation-for="Quantity" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Добавить" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">На главную</a>
 </div>
 
 @section Scripts {

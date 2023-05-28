@@ -1,14 +1,14 @@
 ﻿@model IEnumerable<SecurityLite.Models.OrderDetail>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Подробности заказов - главная";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Подробности заказов</h1>
 
 <p>
-    <a asp-action="SelectOrder">Create New</a>
+    <a asp-action="SelectOrder">Добавить</a>
 </p>
 <table class="table">
     <thead>
@@ -35,7 +35,7 @@
                 @Html.DisplayFor(modelItem => item.Order.Id)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.GuardedObject.Building)
+                @Html.DisplayFor(modelItem => item.GuardedObject.Name)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Service.Name)
@@ -44,11 +44,10 @@
                 @Html.DisplayFor(modelItem => item.Quantity)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">Редактировать</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Подробности</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Удаление</a>
             </td>
-        </tr>
-}
+        </tr>}
     </tbody>
 </table>

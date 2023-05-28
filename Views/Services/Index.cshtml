@@ -1,14 +1,14 @@
 ﻿@model IEnumerable<SecurityLite.Models.Service>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Услуги - главная";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Добавить</a>
 </p>
 
 @if (User.IsInRole("admin"))
@@ -45,17 +45,11 @@
                 @Html.DisplayFor(modelItem => item.PeriodOfExecution)
             </td>
             <td>
-                    @if (User.IsInRole("admin"))
+                    @if (User.IsInRole("admin")||User.IsInRole("manager"))
                     {
-                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> 
-                        <a asp-action="Details" asp-route-id="@item.Id">Details</a>
-                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                    }
-                    @if (User.IsInRole("manager"))
-                    {
-                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
-                        <a asp-action="Details" asp-route-id="@item.Id">Details</a>
-                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Редактирование</a> 
+                        <a asp-action="Details" asp-route-id="@item.Id">Подробнее</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
                     }
             </td>
         </tr>

@@ -1,6 +1,9 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @model SecurityLite.Models.ViewModel.ChangeRoleViewModel
- 
+ @{
+    ViewData["Title"] = "Роли - Изменение ролей пользователя";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 <h2>Изменение ролей для пользователя @Model.UserEmail</h2>
 <div class="row">
     <div class="col-md-4">
