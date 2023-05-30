@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RxsYss3DPo/rZHP4H8y1uujXGxIAR6t/OMRN49TSVeQ=",
+  "Hash": "HTN7lxzJjOmmqm0XxWfe6634zBmKvwf3LKiDR9qRKb4=",
   "Source": "SecurityLite",
   "BasePath": "_content/SecurityLite",
   "Mode": "Default",
@@ -100,23 +100,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Files\\burzhui.png"
-    },
-    {
-      "Identity": "C:\\projects\\Csharp\\SecurityWebLite\\wwwroot\\Files\\image.jpg",
-      "SourceId": "SecurityLite",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\projects\\Csharp\\SecurityWebLite\\wwwroot\\",
-      "BasePath": "_content/SecurityLite",
-      "RelativePath": "Files/image.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Files\\image.jpg"
     },
     {
       "Identity": "C:\\projects\\Csharp\\SecurityWebLite\\wwwroot\\Files\\SOCIAL_HOUSING_15_HIRAN_PERERA_REUSE__thumb.jpg",

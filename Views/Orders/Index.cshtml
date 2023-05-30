@@ -13,7 +13,7 @@
 @if (User.IsInRole("admin"))
 {
     <p>
-        <a asp-action="GetReport">Получить отчет по заказам</a>
+        <a asp-action="GetReport">Получить отчет</a>
     </p>
 }
 
@@ -63,7 +63,11 @@
                         <a asp-action="Details" asp-route-id="@item.Id">Подробности</a>
                         <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
                     }
-            </td>
+                    @if (User.IsInRole("client"))
+                    {
+                        <a asp-action="Details" asp-route-id="@item.Id">Подробности</a>
+                    }
+                </td>
         </tr>
 }
     </tbody>

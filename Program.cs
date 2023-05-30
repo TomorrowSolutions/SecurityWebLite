@@ -29,7 +29,7 @@ builder.Services.ConfigureApplicationCookie(opt =>
     opt.AccessDeniedPath = new PathString("/Identity/Account/AccessDenied");
     opt.LoginPath = new PathString("/Identity/Account/Login");
 });
-builder.Services.AddQuartz(q =>
+/*builder.Services.AddQuartz(q =>
 {
     q.UseMicrosoftDependencyInjectionJobFactory();
     var jobKey = new JobKey("ReportSender");
@@ -43,7 +43,7 @@ builder.Services.AddQuartz(q =>
         );
 }
 );
-builder.Services.AddQuartzHostedService(q => q.WaitForJobsToComplete = true);
+builder.Services.AddQuartzHostedService(q => q.WaitForJobsToComplete = true);*/
 
 
 

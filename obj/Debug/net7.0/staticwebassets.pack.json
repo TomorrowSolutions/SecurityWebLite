@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets\\Files\\burzhui.png"
     },
     {
-      "Id": "C:\\projects\\Csharp\\SecurityWebLite\\wwwroot\\Files\\image.jpg",
-      "PackagePath": "staticwebassets\\Files\\image.jpg"
-    },
-    {
       "Id": "C:\\projects\\Csharp\\SecurityWebLite\\wwwroot\\Reports\\ManagerReport.xlsx",
       "PackagePath": "staticwebassets\\Reports\\ManagerReport.xlsx"
     },

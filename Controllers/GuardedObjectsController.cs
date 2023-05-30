@@ -37,7 +37,8 @@ namespace SecurityLite.Controllers
             {
                 return NotFound();
             }
-
+            if (System.IO.File.Exists(_appEnvironment.WebRootPath+gObject.Image)) 
+                System.IO.File.Delete(_appEnvironment.WebRootPath + gObject.Image);
             gObject.Image = null;
 
             _context.SaveChanges();

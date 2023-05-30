@@ -157,51 +157,10 @@ namespace SecurityLite.Controllers
                 return NotFound();
             }
             var user = await _userManager.GetUserAsync(User);
-            Order? order = null;
-            if (user != null)
-            {
-                if (await _userManager.IsInRoleAsync(user, "admin"))
-                {
-                    order = await _context.Orders
+            Order? order= await _context.Orders
                         .Include(o => o.Client)
                         .Include(o => o.Manager)
-                        .FirstOrDefaultAsync(m => m.Id == id);
-                }
-                else if (await _userManager.IsInRoleAsync(user, "client"))
-                {
-                    var client = await _context.Clients.FirstOrDefaultAsync(c => c.AccountNum == user.AccountNum);
-                    if (user == null || client == null)
-                    {
-                        return Forbid();
-                    }
-                    else
-                    {
-                        order = await _context.Orders
-                        .Include(o => o.Client.AccountNum == client.AccountNum)
-                        .Include(o => o.Manager)
-                        .FirstOrDefaultAsync(m => m.Id == id);
-                    }
-                }
-                else if (await _userManager.IsInRoleAsync(user, "manager"))
-                {
-                    var manager = await _context.Managers.FirstOrDefaultAsync(c => c.AccountNum == user.AccountNum);
-                    if (user == null || manager == null)
-                    {
-                        return Forbid();
-                    }
-                    else
-                    {
-                        order = await _context.Orders
-                        .Include(o => o.Client)
-                        .Include(o => o.Manager.AccountNum == manager.AccountNum)
-                        .FirstOrDefaultAsync(m => m.Id == id);
-                    }
-                }
-            }
-            else
-            {
-                return Forbid();
-            }
+                        .FirstOrDefaultAsync(m => m.Id == id); 
             if (order == null)
             {
                 return NotFound();

@@ -44,7 +44,14 @@
     </dl>
 </div>
 <div>
-    <a asp-action="finalDataCost" asp-route-id="@Model?.Id">Расчитать стоимость и дату выполнения</a> |
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Редактировать</a> |
-    <a asp-action="Index">На главную</a>
+    @if (User.IsInRole("admin") || User.IsInRole("manager"))
+    {
+        <a asp-action="finalDataCost" asp-route-id="@Model?.Id">Расчитать стоимость и дату выполнения</a>
+        <a asp-action="Edit" asp-route-id="@Model?.Id">Редактировать</a>
+        <a asp-action="Index">На главную</a>
+    }
+    @if (User.IsInRole("client"))
+    {
+        <a asp-action="Index">На главную</a>
+    }
 </div>

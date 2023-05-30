@@ -54,15 +54,6 @@ namespace SecurityLite.Controllers
 
             return View(manager);
         }
-        public IActionResult removeFromCategory(int id)
-        {
-            Manager manager = _context.Managers.Find(id);
-            if (manager == null)
-                return NotFound();
-            manager.CategoryId = null;
-            _context.SaveChanges();
-            return RedirectToAction(nameof(Details), new { id = manager.Id });
-        }
         [Authorize(Roles = "admin")]
         public FileResult GetReport()
         {
